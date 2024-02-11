@@ -44,12 +44,13 @@ export class App extends Component {
     const positivePercentage = this.positivePercentageFeedback();
     return (
       <>
+        <Section title="Please leave a feedback" />
         <FeedbackOptions
           options={options}
           onLeaveFeedback={this.handleFeedback}
           clearFeedback={this.clearFeedback}
         />
-
+        <Section />
         <Section title="Statistics">
           {total > 0 ? (
             <Statistics
